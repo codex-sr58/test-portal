@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f5f0">
+  <meta name="description" content="社内業務マニュアルのテストサイトです。請求・経理・人事労務・総務・ITのよくある質問を探せます。">
+  <title>社内業務マニュアル</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="社内業務マニュアル トップ">
+      <span class="brand-mark" aria-hidden="true">手</span>
+      <span><strong>社内業務マニュアル</strong><small>INTERNAL KNOWLEDGE GUIDE</small></span>
+    </a>
+    <span class="header-note"><span class="status-dot"></span>社内向けガイド</span>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">WORK, MADE A LITTLE EASIER</p>
+        <h1 id="hero-title">知りたいことを、<br><em>すぐに見つける。</em></h1>
+        <p class="hero-description">日々の業務で迷ったときに。手順やよくある質問をまとめています。</p>
+        <form class="search" role="search" id="search-form">
+          <label class="sr-only" for="search-input">マニュアルを検索</label>
+          <span class="search-icon" aria-hidden="true">⌕</span>
+          <input id="search-input" type="search" placeholder="キーワードで検索（例：請求書、休暇）" autocomplete="off">
+          <button type="submit">検索</button>
+        </form>
+        <p class="search-hint">キーワードを入力すると、質問と回答から検索します</p>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="sun"></div><div class="leaf leaf-one"></div><div class="leaf leaf-two"></div>
+        <div class="book"><span></span><span></span><span></span><b>GUIDE</b></div>
+        <div class="art-spark">✳</div>
+      </div>
+    </section>
+
+    <section class="categories-section" aria-labelledby="categories-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">BROWSE BY CATEGORY</p><h2 id="categories-title">カテゴリから探す</h2></div>
+        <span class="section-aside">業務ごとにまとめています</span>
+      </div>
+      <nav class="category-grid" id="category-grid" aria-label="マニュアルのカテゴリ"></nav>
+    </section>
+
+    <section class="faq-section" id="faq-section" aria-labelledby="faq-title">
+      <div class="section-heading faq-heading">
+        <div><p class="eyebrow">QUICK ANSWERS</p><h2 id="faq-title">よくある質問</h2></div>
+        <button class="clear-filter" id="clear-filter" type="button" hidden>すべて表示 <span aria-hidden="true">×</span></button>
+      </div>
+      <p class="result-message" id="result-message" aria-live="polite"></p>
+      <div class="faq-list" id="faq-list"></div>
+      <div class="empty-state" id="empty-state" hidden>
+        <span aria-hidden="true">⌕</span><strong>該当する項目が見つかりませんでした</strong>
+        <p>別のキーワードで検索するか、カテゴリを選び直してください。</p>
+      </div>
+    </section>
+    <aside class="help-note"><span class="help-icon" aria-hidden="true">i</span><p><strong>お探しの情報が見つからないときは</strong><br>担当部署またはマニュアル管理者にお問い合わせください。</p><span class="note-decoration" aria-hidden="true">✳</span></aside>
+  </main>
+
+  <footer class="site-footer"><span>社内業務マニュアル</span><span>このサイトは構成確認用のテスト版です。掲載内容はすべてサンプルです。</span><span>© 2026 INTERNAL GUIDE</span></footer>
+</body>
+</html>
